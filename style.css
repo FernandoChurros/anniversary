@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+:root {
+    --bg-color: #7F384A;
+    --shadow-font: #a9a9a9;
+    --box-shadow: #292929;
+    --bg-color-second: #ebdcde;
+    --font: #0F1015;
+}
+
+html {margin: 0; padding: 0; border: 0;}
+
+.body {
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: var(--bg-color);
+    color: var(--font);
+}
+
+.wrapper {
+    text-align: center;
+}
+
+.main__title {
+    text-shadow: 1px 1px 1px var(--shadow-font);
+}
+
+.btn {
+    padding: .8rem 1.6rem;
+    border-radius: .5rem;
+    border: none;
+    box-shadow: 2px 2px 0px var(--box-shadow);
+    background-color: var(--bg-color-second);
+    cursor: pointer;
+    transition: box-shadow .1s;
+    font-family: inherit;
+    font-size: 1rem;
+}
+
+.btn:hover {
+    box-shadow: 3px 3px 0px var(--box-shadow);
+}
+
+.btn:active {
+    transform: scale(.9);
+}
+
+.video {
+    border-radius: 8px;
+    box-shadow: 1px 1px 8px var(--box-shadow);
+}
+
+.hide {
+    display: none;
+}
+
+.no__span {
+    border-radius: .5rem;
+    box-shadow: 1px 1px 8px var(--box-shadow);
+    background-color: var(--bg-color-second);
+    color: var(--font);
+    padding: 1rem 1.2rem;
+    text-align: center;
+}
+
+@media screen and (max-width: 375px) {
+    .video {
+        transform: scale(.9);
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .video {
+        transform: scale(2);
+    }
+}
